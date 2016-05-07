@@ -14,6 +14,7 @@
 		43245EB11CDE674A00BDA44E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43245EAF1CDE674A00BDA44E /* LaunchScreen.storyboard */; };
 		43245EBC1CDE674A00BDA44E /* Angel_HackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245EBB1CDE674A00BDA44E /* Angel_HackTests.swift */; };
 		43245EC71CDE674A00BDA44E /* Angel_HackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245EC61CDE674A00BDA44E /* Angel_HackUITests.swift */; };
+		43BF9E6D1CDE742000A76935 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 43BF9E6C1CDE742000A76935 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		43245EC21CDE674A00BDA44E /* Angel HackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Angel HackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43245EC61CDE674A00BDA44E /* Angel_HackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angel_HackUITests.swift; sourceTree = "<group>"; };
 		43245EC81CDE674A00BDA44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BF9E6C1CDE742000A76935 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		43245EA51CDE674A00BDA44E /* Angel Hack */ = {
 			isa = PBXGroup;
 			children = (
+				43BF9E6C1CDE742000A76935 /* Podfile */,
 				43245EA61CDE674A00BDA44E /* AppDelegate.swift */,
 				43245EA81CDE674A00BDA44E /* ViewController.swift */,
 				43245EAA1CDE674A00BDA44E /* Main.storyboard */,
@@ -231,6 +234,7 @@
 			files = (
 				43245EB11CDE674A00BDA44E /* LaunchScreen.storyboard in Resources */,
 				43245EAE1CDE674A00BDA44E /* Assets.xcassets in Resources */,
+				43BF9E6D1CDE742000A76935 /* Podfile in Resources */,
 				43245EAC1CDE674A00BDA44E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				43245ECD1CDE674A00BDA44E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43245ECE1CDE674A00BDA44E /* Build configuration list for PBXNativeTarget "Angel HackTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				43245ED01CDE674A00BDA44E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43245ED11CDE674A00BDA44E /* Build configuration list for PBXNativeTarget "Angel HackUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				43245ED31CDE674A00BDA44E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
