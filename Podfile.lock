@@ -1,1 +1,23 @@
+PODS:
+  - FoldingCell (0.8.1)
+  - Spring (1.0.3)
+
+DEPENDENCIES:
+  - FoldingCell (~> 0.8.1)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift2
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  FoldingCell: d5e51ca7f9a14c0d7c6abb8a1c06de2b6f4186b2
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+
 COCOAPODS: 0.39.0
