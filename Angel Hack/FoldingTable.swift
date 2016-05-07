@@ -58,7 +58,7 @@ class MainTableViewController: UITableViewController {
         return cellHeights[indexPath.row]
     }
     
-    // MARK: Table vie delegate
+    // MARK: Table view delegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! FoldingCell
