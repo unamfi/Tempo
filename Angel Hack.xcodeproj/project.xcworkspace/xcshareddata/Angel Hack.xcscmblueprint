@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "419DE3E4D400CE8E37997A3E3E320A3A1BA50A28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "419DE3E4D400CE8E37997A3E3E320A3A1BA50A28" : 0,
+    "209ED4662E5693194ECF8464AB2014B7C6C3A6BE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "736598FD-9363-4709-A0CA-49462F468D89",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "419DE3E4D400CE8E37997A3E3E320A3A1BA50A28" : "Angel%20Hack\/",
+    "209ED4662E5693194ECF8464AB2014B7C6C3A6BE" : "ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Angel Hack",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Angel Hack.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Close5\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "209ED4662E5693194ECF8464AB2014B7C6C3A6BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JuIioCesar\/Angel-Hack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "419DE3E4D400CE8E37997A3E3E320A3A1BA50A28"
+    }
+  ]
+}
