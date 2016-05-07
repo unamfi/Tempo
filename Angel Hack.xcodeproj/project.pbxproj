@@ -15,7 +15,6 @@
 		43245EB11CDE674A00BDA44E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43245EAF1CDE674A00BDA44E /* LaunchScreen.storyboard */; };
 		43245EBC1CDE674A00BDA44E /* Angel_HackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245EBB1CDE674A00BDA44E /* Angel_HackTests.swift */; };
 		43245EC71CDE674A00BDA44E /* Angel_HackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245EC61CDE674A00BDA44E /* Angel_HackUITests.swift */; };
-		43BF9E6D1CDE742000A76935 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 43BF9E6C1CDE742000A76935 /* Podfile */; };
 		43BF9E6F1CDE8D0600A76935 /* FoldingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF9E6E1CDE8D0600A76935 /* FoldingTable.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		43245EC21CDE674A00BDA44E /* Angel HackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Angel HackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43245EC61CDE674A00BDA44E /* Angel_HackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angel_HackUITests.swift; sourceTree = "<group>"; };
 		43245EC81CDE674A00BDA44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43BF9E6C1CDE742000A76935 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		43BF9E6E1CDE8D0600A76935 /* FoldingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingTable.swift; sourceTree = "<group>"; };
 		A3659FF4F97077CA3194F3AE /* Pods_Angel_Hack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Angel_Hack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63A0083619E794DB92BD1BF /* Pods-Angel Hack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Angel Hack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Angel Hack/Pods-Angel Hack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 		43245EA51CDE674A00BDA44E /* Angel Hack */ = {
 			isa = PBXGroup;
 			children = (
-				43BF9E6C1CDE742000A76935 /* Podfile */,
 				43245EA61CDE674A00BDA44E /* AppDelegate.swift */,
 				43245EA81CDE674A00BDA44E /* ViewController.swift */,
 				43BF9E6E1CDE8D0600A76935 /* FoldingTable.swift */,
@@ -264,7 +261,6 @@
 			files = (
 				43245EB11CDE674A00BDA44E /* LaunchScreen.storyboard in Resources */,
 				43245EAE1CDE674A00BDA44E /* Assets.xcassets in Resources */,
-				43BF9E6D1CDE742000A76935 /* Podfile in Resources */,
 				43245EAC1CDE674A00BDA44E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
