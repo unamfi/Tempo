@@ -13,19 +13,17 @@ class MainTableViewController: UITableViewController {
     
     let kCloseCellHeight: CGFloat = 179
     let kOpenCellHeight: CGFloat = 488
-    
     let kRowsCount = 10
-    
     var cellHeights = [CGFloat]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         createCellHeightsArray()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
     
     // MARK: configure
+    
     func createCellHeightsArray() {
         for _ in 0...kRowsCount {
             cellHeights.append(kCloseCellHeight)
@@ -39,7 +37,6 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
         if cell is FoldingCell {
             let foldingCell = cell as! FoldingCell
             foldingCell.backgroundColor = UIColor.clearColor()
@@ -54,7 +51,6 @@ class MainTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FoldingCell", forIndexPath: indexPath)
-        
         return cell
     }
     
@@ -65,13 +61,10 @@ class MainTableViewController: UITableViewController {
     // MARK: Table vie delegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! FoldingCell
-        
         if cell.isAnimating() {
             return
         }
-        
         var duration = 0.0
         if cellHeights[indexPath.row] == kCloseCellHeight { // open cell
             cellHeights[indexPath.row] = kOpenCellHeight
@@ -82,13 +75,10 @@ class MainTableViewController: UITableViewController {
             cell.selectedAnimation(false, animated: true, completion: nil)
             duration = 0.8
         }
-        
         UIView.animateWithDuration(duration, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
             tableView.beginUpdates()
             tableView.endUpdates()
             }, completion: nil)
-        
-        
     }
 }
 
@@ -102,7 +92,6 @@ class DemoCell: FoldingCell {
     }
     
     override func animationDuration(itemIndex:NSInteger, type:AnimationType)-> NSTimeInterval {
-        
         let durations = [0.26, 0.2, 0.2]
         return durations[itemIndex]
     }
