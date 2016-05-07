@@ -6,6 +6,7 @@ use_frameworks!
 target 'Angel Hack' do
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 pod 'FoldingCell', '~> 0.8.1'
+pod 'BEMSimpleLineGraph'
 end
 
 target 'Angel HackTests' do

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BEMSimpleLineGraph.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FoldingCell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>21C90A988C037120045DAB99180DDD44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>44D04613A7591446E9F604C26C55657F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>908CA7F57223C559B71F553E8482C1A3</key>
+		<key>7657AD40A35CAB4EB2BE7EED256B421C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DABBC1CACF81F4D169B306FA57A619B5</key>
+		<key>78DD729E6F6BE3C1326232CD5DFFFBB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
