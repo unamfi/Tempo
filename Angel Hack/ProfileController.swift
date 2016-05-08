@@ -8,6 +8,7 @@
 
 import UIKit
 import BEMSimpleLineGraph
+import LTMorphingLabel
 
 let offset_HeaderStop:CGFloat = 40.0
 let offset_B_LabelHeader:CGFloat = 95.0
@@ -33,8 +34,26 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
         super.viewDidLoad()
         graphConfig()
         scrollConfig()
+        iniciaTimer()
     }
     
+    func iniciaTimer() {
+        NSTimer.scheduledTimerWithTimeInterval(3,
+                                               target: self,
+                                               selector: #selector(doStuff),
+                                               userInfo: nil,
+                                               repeats: true)
+    }
+    
+    @IBOutlet weak var morphingLabel: LTMorphingLabel!
+    var counter = 0
+    let thingsToSay = ["µ = $20,000",
+                       "σ = $5,000",
+                       ]
+    func doStuff() {
+        morphingLabel.text = thingsToSay[counter%thingsToSay.count]
+        counter = counter + 1
+    }
     
     override func viewDidAppear(animated: Bool) {
         /*var colorSpace = CGColorSpaceCreateDeviceRGB();

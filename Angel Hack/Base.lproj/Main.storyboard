@@ -687,7 +687,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQQ-fS-W9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="-291.5"/>
+            <point key="canvasLocation" x="962" y="429.5"/>
         </scene>
         <!--Profile Controller-->
         <scene sceneID="09f-Xd-eMq">
@@ -732,9 +732,23 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-ez-pDV" customClass="BEMSimpleLineGraphView">
                                                 <rect key="frame" x="20" y="70" width="560" height="140"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Hola!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sku-p5-fBf" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                                        <rect key="frame" x="257" y="59" width="45" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="morphingEnabled" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="Sku-p5-fBf" firstAttribute="centerY" secondItem="n0W-ez-pDV" secondAttribute="centerY" id="39w-FQ-BSq"/>
                                                     <constraint firstAttribute="height" constant="140" id="PPC-tJ-ZMu"/>
+                                                    <constraint firstItem="Sku-p5-fBf" firstAttribute="centerX" secondItem="n0W-ez-pDV" secondAttribute="centerX" id="TJ4-gG-0Yh"/>
                                                     <constraint firstAttribute="height" constant="140" id="wB9-fD-mge"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -854,6 +868,7 @@
                         <outlet property="chart" destination="n0W-ez-pDV" id="r3l-bm-WhY"/>
                         <outlet property="header" destination="Gf1-Vv-egT" id="LWJ-Mi-lYX"/>
                         <outlet property="headerLabel" destination="Ksh-0I-1SH" id="UCe-on-4Gi"/>
+                        <outlet property="morphingLabel" destination="Sku-p5-fBf" id="slv-uA-ruh"/>
                         <outlet property="scrollView" destination="z1H-gO-lcc" id="2iK-1g-3HE"/>
                     </connections>
                 </viewController>
