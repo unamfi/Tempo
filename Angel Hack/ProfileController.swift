@@ -27,7 +27,7 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
     var blurredHeaderImageView:UIImageView?
     
     var workSalaries:[CGFloat] = [0,10000,0]
-    
+    var xAxisLabel = ["10,000","20,000","10,000"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,17 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
         scrollConfig()
     }
     
+    
+    override func viewDidAppear(animated: Bool) {
+        /*var colorSpace = CGColorSpaceCreateDeviceRGB();
+        var num_locations = 2;
+        var locations:[CGFloat] = [0.0,1.0];
+        var components:[CGFloat] = {1.0, 0, 0, 1.0,
+            1.0, 0, 1.0, 0}
+        var gradiente = CGGradientCreateWithColors(colorSpace, components, locations)
+        
+        self.chart.gradientBottom = gradiente!*/
+    } 
     
     func scrollConfig() {
         scrollView.delegate = self
@@ -60,24 +71,18 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
     
     
     func graphConfig() {
-        var colorSpace = CGColorSpaceCreateDeviceRGB();
-        var num_locations = 2;
-        var locations:[CGFloat] = [0.0,1.0];
-        var components:[CGFloat] = [1.0, 0, 0, 1.0,
-                                    1.0, 0, 1.0, 0]
         
-        var gradiente = CGGradientCreateWithColors(colorSpace, components, locations)
-        //self.chart.gradientBottom = gradiente!
         self.chart.delegate = self
         self.chart.dataSource = self
         
-        self.chart.enableYAxisLabel = true
+        self.chart.enableYAxisLabel = false
         self.chart.enableXAxisLabel = true
         self.chart.autoScaleYAxis = true
         self.chart.alwaysDisplayDots = true
         self.chart.enableReferenceXAxisLines = false
-        self.chart.enableReferenceYAxisLines = false
+        self.chart.enableReferenceYAxisLines = true
         self.chart.enableReferenceAxisFrame = true
+        
     }
     
     
@@ -97,7 +102,7 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
     
    
     func lineGraph(graph: BEMSimpleLineGraphView, labelOnXAxisForIndex index: Int) -> String {
-        return "A"
+        return xAxisLabel[index]
     }
     
     
