@@ -426,7 +426,7 @@
                                                                 <constraint firstAttribute="height" constant="41" id="X2k-c4-lxI"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
-                                                            <state key="normal" title="APPLY">
+                                                            <state key="normal" title="APLICA">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
                                                             <userDefinedRuntimeAttributes>
