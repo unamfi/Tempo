@@ -17,7 +17,11 @@ class DemoCell: FoldingCell {
     override func awakeFromNib() {
         foregroundView.layer.cornerRadius = 10
         foregroundView.layer.masksToBounds = true
+        foregroundView.layer.borderWidth = 0.5
+        containerView.layer.borderWidth = 0.5
         coverPhoto.image = coverPhoto.image?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
+       
+        
         super.awakeFromNib()
     }
     
