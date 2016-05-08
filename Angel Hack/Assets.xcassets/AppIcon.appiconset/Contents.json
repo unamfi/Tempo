@@ -23,12 +23,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "13183229_10153748426528843_339992000_n.png",
+      "filename" : "imagotipo60@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "imagotipo@3x.png",
       "scale" : "3x"
     },
     {
