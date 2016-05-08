@@ -16,6 +16,9 @@
 		43245EBC1CDE674A00BDA44E /* Angel_HackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245EBB1CDE674A00BDA44E /* Angel_HackTests.swift */; };
 		43245EC71CDE674A00BDA44E /* Angel_HackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245EC61CDE674A00BDA44E /* Angel_HackUITests.swift */; };
 		43BF9E6F1CDE8D0600A76935 /* FoldingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF9E6E1CDE8D0600A76935 /* FoldingTable.swift */; };
+		AB2E214E1CDE9E0D004B7BB4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E214D1CDE9E0D004B7BB4 /* ProfileController.swift */; };
+		AB2E21501CDED760004B7BB4 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E214F1CDED760004B7BB4 /* AvatarImageView.swift */; };
+		AB2E21541CDEF700004B7BB4 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2E21531CDEF700004B7BB4 /* FXBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,11 @@
 		43245EC81CDE674A00BDA44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BF9E6E1CDE8D0600A76935 /* FoldingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingTable.swift; sourceTree = "<group>"; };
 		A3659FF4F97077CA3194F3AE /* Pods_Angel_Hack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Angel_Hack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2E214D1CDE9E0D004B7BB4 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		AB2E214F1CDED760004B7BB4 /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		AB2E21521CDEF700004B7BB4 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		AB2E21531CDEF700004B7BB4 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		AB2E21591CDEF7A5004B7BB4 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		F63A0083619E794DB92BD1BF /* Pods-Angel Hack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Angel Hack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Angel Hack/Pods-Angel Hack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,10 +114,13 @@
 		43245EA51CDE674A00BDA44E /* Angel Hack */ = {
 			isa = PBXGroup;
 			children = (
+				AB2E21551CDEF705004B7BB4 /* Helpers */,
+				AB2E21511CDEF505004B7BB4 /* Designables */,
 				43245EA61CDE674A00BDA44E /* AppDelegate.swift */,
 				43245EA81CDE674A00BDA44E /* ViewController.swift */,
 				43BF9E6E1CDE8D0600A76935 /* FoldingTable.swift */,
 				43245EAA1CDE674A00BDA44E /* Main.storyboard */,
+				AB2E214D1CDE9E0D004B7BB4 /* ProfileController.swift */,
 				43245EAD1CDE674A00BDA44E /* Assets.xcassets */,
 				43245EAF1CDE674A00BDA44E /* LaunchScreen.storyboard */,
 				43245EB21CDE674A00BDA44E /* Info.plist */,
@@ -141,6 +152,24 @@
 				A3659FF4F97077CA3194F3AE /* Pods_Angel_Hack.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2E21511CDEF505004B7BB4 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E214F1CDED760004B7BB4 /* AvatarImageView.swift */,
+			);
+			name = Designables;
+			sourceTree = "<group>";
+		};
+		AB2E21551CDEF705004B7BB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E21521CDEF700004B7BB4 /* FXBlurView.h */,
+				AB2E21531CDEF700004B7BB4 /* FXBlurView.m */,
+				AB2E21591CDEF7A5004B7BB4 /* Bridge.h */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		DFC587CCD139F09B1A4FA597 /* Pods */ = {
@@ -334,9 +363,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2E214E1CDE9E0D004B7BB4 /* ProfileController.swift in Sources */,
+				AB2E21501CDED760004B7BB4 /* AvatarImageView.swift in Sources */,
 				43245EA91CDE674A00BDA44E /* ViewController.swift in Sources */,
 				43BF9E6F1CDE8D0600A76935 /* FoldingTable.swift in Sources */,
 				43245EA71CDE674A00BDA44E /* AppDelegate.swift in Sources */,
+				AB2E21541CDEF700004B7BB4 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +517,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Julio.Angel-Hack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Angel Hack/Bridge.h";
 			};
 			name = Debug;
 		};
@@ -497,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Julio.Angel-Hack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Angel Hack/Bridge.h";
 			};
 			name = Release;
 		};
