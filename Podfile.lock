@@ -1,11 +1,13 @@
 PODS:
   - BEMSimpleLineGraph (4.1)
   - FoldingCell (0.8.1)
+  - Shimmer (1.0.2)
   - Spring (1.0.3)
 
 DEPENDENCIES:
   - BEMSimpleLineGraph
   - FoldingCell (~> 0.8.1)
+  - Shimmer (~> 1.0)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
 
 EXTERNAL SOURCES:
@@ -21,6 +23,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   BEMSimpleLineGraph: 44fd451f27f8e9cf96f2da5bea27603093576dd1
   FoldingCell: d5e51ca7f9a14c0d7c6abb8a1c06de2b6f4186b2
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
 COCOAPODS: 0.39.0
