@@ -8,6 +8,7 @@
 
 import Foundation
 import FoldingCell
+import LTMorphingLabel
 
 let kFoldingCellReuseIdentifier = "FoldingCell"
 
@@ -21,13 +22,38 @@ class DemoCell: FoldingCell {
         containerView.layer.borderWidth = 0.5
         coverPhoto.image = coverPhoto.image?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
        
-        
+        iniciaTimer()
         super.awakeFromNib()
     }
     
     override func animationDuration(itemIndex:NSInteger, type:AnimationType)-> NSTimeInterval {
         let durations = [0.26, 0.2, 0.2]
         return durations[itemIndex]
+    }
+    
+    func iniciaTimer() {
+        NSTimer.scheduledTimerWithTimeInterval(3,
+                                               target: self,
+                                               selector: #selector(doStuff),
+                                               userInfo: nil,
+                                               repeats: true)
+    }
+    
+    @IBOutlet weak var morphingLabel: LTMorphingLabel!
+    var counter = 0
+    let thingsToSay = ["Habilidades",
+                       "Skills",
+                       "技能",
+                       "färdigheter",
+                       "Compétences",
+                       "Fähigkeiten",
+                       ]
+    func doStuff() {
+        if morphingLabel != nil {
+            morphingLabel.text = thingsToSay[counter%thingsToSay.count]
+            counter = counter + 1
+        }
+      
     }
     
 }
