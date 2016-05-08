@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '36B62A60A4A1DE899E72CA70'
+               BlueprintIdentifier = 'BDA4745602F30A2884D45FFE'
                BlueprintName = 'Pods-Angel Hack'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Angel_Hack.framework'>
