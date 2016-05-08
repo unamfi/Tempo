@@ -77,7 +77,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="800" height="667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-UM-ry3" userLabel="Contener">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-UM-ry3" userLabel="Contener" customClass="FBShimmeringView">
                                             <rect key="frame" x="20" y="180" width="760" height="479"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-Up-FUG" userLabel="FirstContanerView">
@@ -114,8 +114,8 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXN-YF-mSY" userLabel="CenterView">
                                                             <rect key="frame" x="257" y="117" width="246" height="40"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="APTITUD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="784-a3-UhJ">
-                                                                    <rect key="frame" x="103" y="0.0" width="42" height="12"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APTITUD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="784-a3-UhJ">
+                                                                    <rect key="frame" x="102" y="0.0" width="42" height="12"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                                     <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -159,11 +159,18 @@
                                                                 <constraint firstItem="Vhg-ZZ-BMd" firstAttribute="top" secondItem="nnV-Ju-6cR" secondAttribute="top" id="zaS-Cq-7aw"/>
                                                             </constraints>
                                                         </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50,000 - $100,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-Ml-fYP">
+                                                            <rect key="frame" x="252" y="67" width="256.5" height="31.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.090196078430000007" green="0.15686274510000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="7Sb-m5-3OH" secondAttribute="bottom" constant="8" id="4Dp-SV-FZX"/>
                                                         <constraint firstItem="nnV-Ju-6cR" firstAttribute="leading" secondItem="NXN-YF-mSY" secondAttribute="trailing" constant="1" id="8kz-2y-zYQ"/>
+                                                        <constraint firstItem="B0L-Ml-fYP" firstAttribute="centerY" secondItem="9Ta-Up-FUG" secondAttribute="centerY" id="EQZ-zE-xF9"/>
                                                         <constraint firstAttribute="trailing" secondItem="LE3-9k-Mgi" secondAttribute="trailing" id="HBv-RQ-X52"/>
                                                         <constraint firstItem="LE3-9k-Mgi" firstAttribute="top" secondItem="9Ta-Up-FUG" secondAttribute="top" id="Org-EM-1vZ"/>
                                                         <constraint firstItem="NXN-YF-mSY" firstAttribute="width" secondItem="nnV-Ju-6cR" secondAttribute="width" id="RZO-E9-c8r"/>
@@ -171,6 +178,7 @@
                                                         <constraint firstItem="NXN-YF-mSY" firstAttribute="height" secondItem="7Sb-m5-3OH" secondAttribute="height" id="Ues-E9-cXm"/>
                                                         <constraint firstItem="LE3-9k-Mgi" firstAttribute="leading" secondItem="9Ta-Up-FUG" secondAttribute="leading" id="VTd-TW-JAp"/>
                                                         <constraint firstItem="7Sb-m5-3OH" firstAttribute="leading" secondItem="9Ta-Up-FUG" secondAttribute="leading" constant="10" id="WvX-JW-8A1"/>
+                                                        <constraint firstItem="B0L-Ml-fYP" firstAttribute="centerX" secondItem="9Ta-Up-FUG" secondAttribute="centerX" id="X4y-Bz-rcf"/>
                                                         <constraint firstItem="nnV-Ju-6cR" firstAttribute="height" secondItem="7Sb-m5-3OH" secondAttribute="height" id="gfh-Ob-ICI"/>
                                                         <constraint firstItem="nnV-Ju-6cR" firstAttribute="centerY" secondItem="7Sb-m5-3OH" secondAttribute="centerY" id="gk3-Ii-6jh"/>
                                                         <constraint firstAttribute="trailing" secondItem="nnV-Ju-6cR" secondAttribute="trailing" constant="10" id="kP1-f3-VEY"/>
@@ -183,8 +191,8 @@
                                                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojJ-BB-Dpu" userLabel="SecondContanerView" customClass="RotatedView" customModule="Angel_Hack" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="165" width="760" height="165"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EMPRESA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcr-Jd-aEs">
-                                                            <rect key="frame" x="22" y="11" width="49.5" height="12"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMPRESA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcr-Jd-aEs">
+                                                            <rect key="frame" x="22" y="11" width="47.5" height="12"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                             <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.49546030410000003" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
