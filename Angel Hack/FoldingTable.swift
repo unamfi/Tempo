@@ -52,7 +52,7 @@ class MainTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//kRowsCount
+        return kRowsCount
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -68,7 +68,7 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "\(kFoldingCellReuseIdentifier)\(indexPath.row)"
+        let cellIdentifier = "\(kFoldingCellReuseIdentifier)0"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         return cell
     }

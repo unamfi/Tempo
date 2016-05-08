@@ -724,7 +724,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1H-gO-lcc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1H-gO-lcc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="O7C-cu-Si8" userLabel="AvatarImage" customClass="AvatarImageView" customModule="Angel_Hack" customModuleProvider="target">
@@ -877,6 +877,15 @@
                                             <constraint firstAttribute="height" constant="140" id="rba-xU-eCQ"/>
                                         </constraints>
                                     </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zs-9O-pOC">
+                                        <rect key="frame" x="0.0" y="408" width="600" height="600"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="ohz-ML-3r7"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="NHM-vh-Si6" kind="embed" id="5Ii-MU-1a9"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gSc-3o-UGx" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" id="7UB-HE-vjh"/>
@@ -889,10 +898,14 @@
                                     <constraint firstItem="nTb-oN-GrU" firstAttribute="top" secondItem="TmK-nX-DH7" secondAttribute="bottom" constant="3" id="W9g-xy-KFV"/>
                                     <constraint firstAttribute="trailing" secondItem="gSc-3o-UGx" secondAttribute="trailing" id="WjH-c2-GCR"/>
                                     <constraint firstItem="ex5-fV-39r" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" id="aWO-JI-2uY"/>
+                                    <constraint firstAttribute="bottom" secondItem="8zs-9O-pOC" secondAttribute="bottom" id="eDQ-yv-S3a"/>
                                     <constraint firstItem="ex5-fV-39r" firstAttribute="top" secondItem="gSc-3o-UGx" secondAttribute="bottom" id="eQT-MJ-XRo"/>
+                                    <constraint firstItem="8zs-9O-pOC" firstAttribute="top" secondItem="ex5-fV-39r" secondAttribute="bottom" id="f0e-Ij-2eg"/>
                                     <constraint firstItem="nTb-oN-GrU" firstAttribute="leading" secondItem="O7C-cu-Si8" secondAttribute="trailing" constant="8" id="hfa-Mg-ZNO"/>
                                     <constraint firstItem="TmK-nX-DH7" firstAttribute="leading" secondItem="O7C-cu-Si8" secondAttribute="trailing" constant="8" id="m5A-Zj-jsQ"/>
                                     <constraint firstItem="nTb-oN-GrU" firstAttribute="leading" secondItem="TmK-nX-DH7" secondAttribute="leading" id="xOJ-0C-xIX"/>
+                                    <constraint firstItem="8zs-9O-pOC" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" id="xmz-hM-xEz"/>
+                                    <constraint firstAttribute="trailing" secondItem="8zs-9O-pOC" secondAttribute="trailing" id="zoe-w9-ra9"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
