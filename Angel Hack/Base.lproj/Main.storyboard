@@ -235,8 +235,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-Up-FUG" userLabel="FirstContanerView">
                                                     <rect key="frame" x="0.0" y="0.0" width="760" height="165"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="photo-happy" translatesAutoresizingMaskIntoConstraints="NO" id="LE3-9k-Mgi">
-                                                            <rect key="frame" x="0.0" y="36" width="760" height="129"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-happy" translatesAutoresizingMaskIntoConstraints="NO" id="LE3-9k-Mgi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="760" height="165"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-m5-3OH" userLabel="LeftVoew">
                                                             <rect key="frame" x="10" y="117" width="246" height="40"/>
