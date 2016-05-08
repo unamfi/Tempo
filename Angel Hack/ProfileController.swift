@@ -26,6 +26,8 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
     @IBOutlet var headerImageView:UIImageView!
     @IBOutlet var headerBlurImageView:UIImageView!
     var blurredHeaderImageView:UIImageView?
+    let alertApply = UIAlertController()
+    
     
     var workSalaries:[CGFloat] = [0,10000,0]
     var xAxisLabel = ["10,000","20,000","10,000"]
@@ -35,8 +37,12 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
         graphConfig()
         scrollConfig()
         iniciaTimer()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ProfileController.showApplyAlert), name: "showApplyAlert", object: nil)
     }
     
+    func showApplyAlert() {
+        self.presentViewController(alertApply, animated: true, completion: nil)
+    }
     func iniciaTimer() {
         NSTimer.scheduledTimerWithTimeInterval(3,
                                                target: self,
@@ -90,6 +96,11 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
     
     
     func graphConfig() {
+        alertApply.title = "¡Felicitaciones!"
+        alertApply.message = "Un reclutador se pondrá en contacto contigo muy pronto."
+        var okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertApply.addAction(okAction)
+        
         
         self.chart.delegate = self
         self.chart.dataSource = self

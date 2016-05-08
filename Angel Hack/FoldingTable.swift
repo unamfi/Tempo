@@ -18,6 +18,7 @@ class DemoCell: FoldingCell {
     
     
     override func awakeFromNib() {
+        
         foregroundView.layer.cornerRadius = 10
         foregroundView.layer.masksToBounds = true
         foregroundView.layer.borderWidth = 0.5
@@ -61,20 +62,20 @@ class DemoCell: FoldingCell {
     }
     
     @IBAction func applyFB(sender: UIButton) {
-        print("FACeb")
+        NSNotificationCenter.defaultCenter().postNotificationName("showApplyAlert", object: nil)
     }
     
     @IBAction func applyGoogle(sender: UIButton) {
-        print("Google")
+        NSNotificationCenter.defaultCenter().postNotificationName("showApplyAlert", object: nil)
     }
     
     
     @IBAction func applyFlickr(sender: UIButton) {
-        print("Flickr")
+        NSNotificationCenter.defaultCenter().postNotificationName("showApplyAlert", object: nil)
     }
     
     @IBAction func applySnap(sender: UIButton) {
-        print("Snap")
+        NSNotificationCenter.defaultCenter().postNotificationName("showApplyAlert", object: nil)
     }
     
     
