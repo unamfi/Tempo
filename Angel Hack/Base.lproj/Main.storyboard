@@ -720,8 +720,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf1-Vv-egT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ramón Ramírez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksh-0I-1SH">
-                                        <rect key="frame" x="223" y="110" width="154" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramón Ramírez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksh-0I-1SH">
+                                        <rect key="frame" x="240" y="110" width="120" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -743,28 +743,12 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1H-gO-lcc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="O7C-cu-Si8" userLabel="AvatarImage" customClass="AvatarImageView" customModule="Angel_Hack" customModuleProvider="target">
-                                        <rect key="frame" x="27" y="52" width="69" height="69"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="69" id="nM6-oI-3Qb"/>
-                                            <constraint firstAttribute="height" constant="69" id="sVq-RP-cS5"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ramón Ramírez" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmK-nX-DH7">
-                                        <rect key="frame" x="104" y="63" width="224" height="22"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iOS Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTb-oN-GrU" userLabel="TwitterUsername">
-                                        <rect key="frame" x="104" y="88" width="128" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-ez-pDV" customClass="BEMSimpleLineGraphView">
-                                        <rect key="frame" x="144" y="353" width="312" height="107"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-ez-pDV" customClass="BEMSimpleLineGraphView">
+                                        <rect key="frame" x="0.0" y="268" width="600" height="140"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="wB9-fD-mge"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableBezierCurve" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableYAxisLabel" value="YES"/>
@@ -783,56 +767,83 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-3o-UGx">
-                                        <rect key="frame" x="8" y="145" width="584" height="151"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="O7C-cu-Si8" userLabel="AvatarImage" customClass="AvatarImageView" customModule="Angel_Hack" customModuleProvider="target">
+                                        <rect key="frame" x="27" y="52" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="nM6-oI-3Qb"/>
+                                            <constraint firstAttribute="height" constant="69" id="sVq-RP-cS5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramón Ramírez" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmK-nX-DH7">
+                                        <rect key="frame" x="104" y="63" width="132.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTb-oN-GrU" userLabel="TwitterUsername">
+                                        <rect key="frame" x="104" y="88" width="77.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-3o-UGx">
+                                        <rect key="frame" x="0.0" y="141" width="600" height="127"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-PP-hIX">
-                                                <rect key="frame" x="20" y="37" width="96" height="26"/>
+                                                <rect key="frame" x="20" y="37" width="100" height="20"/>
                                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Habilidades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-x1-Vz5">
-                                                <rect key="frame" x="20" y="8" width="90" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Objective-C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioq-D6-un5">
-                                                <rect key="frame" x="136" y="37" width="96" height="26"/>
+                                                <rect key="frame" x="142" y="37" width="100" height="20"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ruby" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gic-Uo-5fe">
-                                                <rect key="frame" x="254" y="37" width="96" height="26"/>
+                                                <rect key="frame" x="264" y="37" width="100" height="20"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Android" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiZ-9a-9Qt">
-                                                <rect key="frame" x="20" y="81" width="96" height="26"/>
+                                                <rect key="frame" x="20" y="74" width="100" height="20"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm0-pm-Rgq">
-                                                <rect key="frame" x="136" y="81" width="96" height="26"/>
+                                                <rect key="frame" x="142" y="72" width="100" height="20"/>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Habilidades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-x1-Vz5">
+                                                <rect key="frame" x="20" y="0.0" width="90" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="127" id="8Jd-72-B3O"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="n0W-ez-pDV" firstAttribute="top" secondItem="gSc-3o-UGx" secondAttribute="bottom" constant="20" id="0HX-7i-TaB"/>
+                                    <constraint firstItem="n0W-ez-pDV" firstAttribute="top" secondItem="gSc-3o-UGx" secondAttribute="bottom" id="6zJ-bb-iso"/>
                                     <constraint firstItem="gSc-3o-UGx" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" id="7UB-HE-vjh"/>
+                                    <constraint firstItem="n0W-ez-pDV" firstAttribute="width" secondItem="z1H-gO-lcc" secondAttribute="width" id="EGj-Wz-dcj"/>
+                                    <constraint firstAttribute="trailing" secondItem="n0W-ez-pDV" secondAttribute="trailing" id="EzO-VS-njH"/>
+                                    <constraint firstAttribute="trailing" secondItem="n0W-ez-pDV" secondAttribute="trailing" id="FHg-dg-wip"/>
                                     <constraint firstItem="TmK-nX-DH7" firstAttribute="top" secondItem="O7C-cu-Si8" secondAttribute="top" constant="11" id="MtS-v7-A4h"/>
                                     <constraint firstItem="O7C-cu-Si8" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" constant="27" id="N78-bx-WqT"/>
                                     <constraint firstItem="gSc-3o-UGx" firstAttribute="top" secondItem="O7C-cu-Si8" secondAttribute="bottom" constant="20" id="NHX-4h-1uJ"/>
@@ -841,16 +852,27 @@
                                     <constraint firstAttribute="trailing" secondItem="gSc-3o-UGx" secondAttribute="trailing" id="WjH-c2-GCR"/>
                                     <constraint firstItem="nTb-oN-GrU" firstAttribute="leading" secondItem="O7C-cu-Si8" secondAttribute="trailing" constant="8" id="hfa-Mg-ZNO"/>
                                     <constraint firstItem="TmK-nX-DH7" firstAttribute="leading" secondItem="O7C-cu-Si8" secondAttribute="trailing" constant="8" id="m5A-Zj-jsQ"/>
+                                    <constraint firstItem="n0W-ez-pDV" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" id="nlQ-rf-k7J"/>
+                                    <constraint firstItem="n0W-ez-pDV" firstAttribute="leading" secondItem="z1H-gO-lcc" secondAttribute="leading" id="sqb-E9-Tzq"/>
                                     <constraint firstItem="nTb-oN-GrU" firstAttribute="leading" secondItem="TmK-nX-DH7" secondAttribute="leading" id="xOJ-0C-xIX"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0HX-7i-TaB"/>
+                                        <exclude reference="EzO-VS-njH"/>
+                                        <exclude reference="sqb-E9-Tzq"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="z1H-gO-lcc" firstAttribute="top" secondItem="Hqr-0s-rlE" secondAttribute="top" id="Fm3-fQ-SCe"/>
                             <constraint firstAttribute="trailing" secondItem="Gf1-Vv-egT" secondAttribute="trailing" id="TBh-yU-Zl3"/>
+                            <constraint firstItem="z1H-gO-lcc" firstAttribute="height" secondItem="Hqr-0s-rlE" secondAttribute="height" id="WMU-JM-L2e"/>
                             <constraint firstItem="z1H-gO-lcc" firstAttribute="leading" secondItem="Hqr-0s-rlE" secondAttribute="leading" id="kCA-ip-h6u"/>
                             <constraint firstAttribute="trailing" secondItem="z1H-gO-lcc" secondAttribute="trailing" id="lSK-ZN-sNu"/>
+                            <constraint firstItem="z1H-gO-lcc" firstAttribute="width" secondItem="Hqr-0s-rlE" secondAttribute="width" id="lX2-z5-EKC"/>
                             <constraint firstItem="Gf1-Vv-egT" firstAttribute="top" secondItem="Hqr-0s-rlE" secondAttribute="top" id="tjC-b6-Czn"/>
                             <constraint firstItem="4Tc-Qj-Rtw" firstAttribute="top" secondItem="z1H-gO-lcc" secondAttribute="bottom" id="tjk-Kr-9OV"/>
                             <constraint firstItem="Gf1-Vv-egT" firstAttribute="leading" secondItem="Hqr-0s-rlE" secondAttribute="leading" id="wdy-ZA-gGO"/>
