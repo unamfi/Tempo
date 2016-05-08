@@ -15,11 +15,15 @@ let kFoldingCellReuseIdentifier = "FoldingCell"
 class DemoCell: FoldingCell {
     
     @IBOutlet weak var coverPhoto: UIImageView!
+    
+    
     override func awakeFromNib() {
         foregroundView.layer.cornerRadius = 10
         foregroundView.layer.masksToBounds = true
         foregroundView.layer.borderWidth = 0.5
         containerView.layer.borderWidth = 0.5
+        containerView.layer.borderColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1).CGColor
+        foregroundView.layer.borderColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1).CGColor
         coverPhoto.image = coverPhoto.image?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
        
         iniciaTimer()
@@ -56,6 +60,27 @@ class DemoCell: FoldingCell {
       
     }
     
+    @IBAction func applyFB(sender: UIButton) {
+        print("FACeb")
+    }
+    
+    @IBAction func applyGoogle(sender: UIButton) {
+        print("Google")
+    }
+    
+    
+    @IBAction func applyFlickr(sender: UIButton) {
+        print("Flickr")
+    }
+    
+    @IBAction func applySnap(sender: UIButton) {
+        print("Snap")
+    }
+    
+    
+    
+    
+    
 }
 
 
@@ -82,7 +107,7 @@ class MainTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2//kRowsCount
+        return 5//kRowsCount
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {

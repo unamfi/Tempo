@@ -47,7 +47,7 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
     
     @IBOutlet weak var morphingLabel: LTMorphingLabel!
     var counter = 0
-    let thingsToSay = ["µ = $20,000",
+    let thingsToSay = ["µ = $45,000",
                        "σ = $5,000",
                        ]
     func doStuff() {
@@ -72,14 +72,14 @@ class ProfileController: UIViewController,BEMSimpleLineGraphDataSource,BEMSimple
         // Header - Image
         
         headerImageView = UIImageView(frame: header.bounds)
-        headerImageView?.image = UIImage(named: "header_bg")
+        headerImageView?.image = UIImage(named: "snapchat-bg")
         headerImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         header.insertSubview(headerImageView, belowSubview: headerLabel)
         
         // Header - Blurred Image
         
         headerBlurImageView = UIImageView(frame: header.bounds)
-        headerBlurImageView?.image = UIImage(named: "header_bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
+        headerBlurImageView?.image = UIImage(named: "snapchat-bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
         headerBlurImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         headerBlurImageView?.alpha = 0.0
         header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
