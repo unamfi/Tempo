@@ -9,6 +9,8 @@
 import Foundation
 import FoldingCell
 
+let kFoldingCellReuseIdentifier = "FoldingCell"
+
 class MainTableViewController: UITableViewController {
     
     let kCloseCellHeight: CGFloat = 179
@@ -19,7 +21,6 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createCellHeightsArray()
-        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
     
     // MARK: configure
@@ -33,14 +34,12 @@ class MainTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 2
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if cell is FoldingCell {
             let foldingCell = cell as! FoldingCell
-            foldingCell.backgroundColor = UIColor.clearColor()
-            
             if cellHeights[indexPath.row] == kCloseCellHeight {
                 foldingCell.selectedAnimation(false, animated: false, completion:nil)
             } else {
