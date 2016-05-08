@@ -159,8 +159,8 @@
                                                                 <constraint firstItem="Vhg-ZZ-BMd" firstAttribute="top" secondItem="nnV-Ju-6cR" secondAttribute="top" id="zaS-Cq-7aw"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50,000 - $100,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-Ml-fYP">
-                                                            <rect key="frame" x="252" y="67" width="256.5" height="31.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50,000 ~ $100,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-Ml-fYP">
+                                                            <rect key="frame" x="250" y="47" width="260" height="32"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -170,7 +170,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="7Sb-m5-3OH" secondAttribute="bottom" constant="8" id="4Dp-SV-FZX"/>
                                                         <constraint firstItem="nnV-Ju-6cR" firstAttribute="leading" secondItem="NXN-YF-mSY" secondAttribute="trailing" constant="1" id="8kz-2y-zYQ"/>
-                                                        <constraint firstItem="B0L-Ml-fYP" firstAttribute="centerY" secondItem="9Ta-Up-FUG" secondAttribute="centerY" id="EQZ-zE-xF9"/>
+                                                        <constraint firstItem="B0L-Ml-fYP" firstAttribute="centerY" secondItem="9Ta-Up-FUG" secondAttribute="centerY" constant="-20" id="EQZ-zE-xF9"/>
                                                         <constraint firstAttribute="trailing" secondItem="LE3-9k-Mgi" secondAttribute="trailing" id="HBv-RQ-X52"/>
                                                         <constraint firstItem="LE3-9k-Mgi" firstAttribute="top" secondItem="9Ta-Up-FUG" secondAttribute="top" id="Org-EM-1vZ"/>
                                                         <constraint firstItem="NXN-YF-mSY" firstAttribute="width" secondItem="nnV-Ju-6cR" secondAttribute="width" id="RZO-E9-c8r"/>
@@ -672,6 +672,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="containerView" destination="1oV-UM-ry3" id="JEK-Yw-fzK"/>
+                                    <outlet property="coverPhoto" destination="LE3-9k-Mgi" id="rVo-1O-76S"/>
                                     <outlet property="foregroundView" destination="SYW-gO-ykY" id="6NM-bD-cLb"/>
                                 </connections>
                             </tableViewCell>

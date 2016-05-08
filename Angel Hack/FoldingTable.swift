@@ -13,9 +13,11 @@ let kFoldingCellReuseIdentifier = "FoldingCell"
 
 class DemoCell: FoldingCell {
     
+    @IBOutlet weak var coverPhoto: UIImageView!
     override func awakeFromNib() {
         foregroundView.layer.cornerRadius = 10
         foregroundView.layer.masksToBounds = true
+        coverPhoto.image = coverPhoto.image?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
         super.awakeFromNib()
     }
     
