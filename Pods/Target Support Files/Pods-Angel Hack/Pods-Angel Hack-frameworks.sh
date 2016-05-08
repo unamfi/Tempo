@@ -86,12 +86,14 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Angel Hack/BEMSimpleLineGraph.framework"
   install_framework "Pods-Angel Hack/FoldingCell.framework"
+  install_framework "Pods-Angel Hack/LTMorphingLabel.framework"
   install_framework "Pods-Angel Hack/Shimmer.framework"
   install_framework "Pods-Angel Hack/Spring.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Angel Hack/BEMSimpleLineGraph.framework"
   install_framework "Pods-Angel Hack/FoldingCell.framework"
+  install_framework "Pods-Angel Hack/LTMorphingLabel.framework"
   install_framework "Pods-Angel Hack/Shimmer.framework"
   install_framework "Pods-Angel Hack/Spring.framework"
 fi

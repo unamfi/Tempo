@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LTMorphingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Angel Hack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EC778FB4398DA61FA32F652A5E7CFA0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>413730E2BC6460C9FE483BD1C7A2967B</key>
+		<key>0DCBD6C869DCC15AF62D43471CB4592C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9703FBC3F968C3521B2500396325779E</key>
+		<key>7A318963CB2F180258E3BFAE4CC4F76A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9CBDECE1A3AB479B4AFE944294D40BFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5050042BE4B793068297BFB44FA7AA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
